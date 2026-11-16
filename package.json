@@ -1,0 +1,16 @@
+{
+  "name": "fenance-keuangan-immn",
+  "version": "1.0.0",
+  "description": "FENANCE KEUANGAN IMMN - keuangan angkatan, offline",
+  "main": "main.js",
+  "author": "IMMANNA",
+  "scripts": {"start": "electron .", "build": "electron-builder --win portable --x64"},
+  "devDependencies": {"electron": "^33.2.0", "electron-builder": "^25.1.8"},
+  "build": {
+    "appId": "id.immn.fenance",
+    "productName": "FENANCE KEUANGAN IMMN",
+    "files": ["main.js","index.html","manifest.json","logo.png","icon-192.png","icon-512.png","icon.ico"],
+    "win": {"target": [{"target": "portable", "arch": ["x64"]}], "icon": "icon.ico"},
+    "portable": {"artifactName": "FENANCE-KEUANGAN-IMMN-portable.exe"}
+  }
+}
